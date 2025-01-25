@@ -1,0 +1,587 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+     position:fixed;
+     top: 0px;
+     width: 100%;
+     transition: 0.3s ease;
+     z-index: 30;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+    align-items: center;
+    /* height: 43.8px; */
+    padding: 22px 80px;
+    background-color: #ffc700;
+}
+.leftnav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    column-gap: 8px;
+    /* height: 34.8px; */
+
+}
+.navo{
+    font-family:'whyte bold';
+    font-size: .875rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 6px 20px 6px;
+    transition-duration: 1s;
+
+}
+.navo.disabled {
+    pointer-events: none;
+    opacity: 0.5; /* Makes the link appear disabled */
+}
+.navo:hover{
+    color: white;
+    background-color: #000;
+     } 
+
+.leficon{
+    height: 30px;
+    width: 30px;
+    background-color: #ffc700;
+
+}
+.leficon button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   width: 100%;
+   background-color: #ffc700;
+   border: none;
+}
+.leficon img{
+    
+   background-color:#ffc700;
+   transition-duration: 1s;
+}
+.leficon img:hover{
+    opacity: 0.4;
+}
+.rightnav{
+    /* height: 43.8px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 8px;
+}
+.rigicon img{
+    height: 18px;
+    width: 18px;
+}
+.navon {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 30px;
+    font-family: 'whyte bold';
+}
+.selec{
+    height: 43.8px;
+    width: 100%;
+    padding: 10px 40px 9px 20px;
+    border-radius: 30px;
+    border: 2px solid var(--black);
+    box-sizing: border-box;
+    border: none;
+    font-size: .875rem;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+}
+.selec.active {
+    color: white;
+    background-color: #000;
+}
+
+/********************************************* section 1 SCROLLER SEC *************************************************** */
+.content{
+    /* height: 601.1px; */
+    background-color: #ffc700;
+    border-bottom: 4px solid black;
+    padding: 91px 0 20px;
+}
+.scroller{
+    overflow: scroll; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.flexo{
+    display: flex;
+}
+.itemu{
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+.itemo1{
+    max-width: 1124px;
+    width: 100%;
+}
+.itemo{
+    max-width: 620px;
+    width: 50%;
+}
+.itemo a{
+    text-decoration: none;
+}
+.svg-cutout{
+    display: block;
+    height: auto;
+    width: 100%;
+    stroke: black;
+    stroke-width: 4px;
+}
+.hovertext{
+    background-color: white;
+    color: #000;
+    font-family: 'whyte bold';
+    bottom: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    padding: 12px 24px 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .3s;
+    width: fit-content;
+    z-index: 30;
+    border-radius: 40px;
+}
+.hovera:hover .hovertext{
+    opacity: 1;
+}
+/* ******************************************************** section 2 FIGMA COLLECTION PARAGRAPH ****************************************************** */
+.sec3{
+    padding: 150px 0 50px;
+}
+.inner3sec{
+    padding: 0px 20px 0px 20px;
+}
+.wordl{
+     text-decoration: underline ;
+}
+.hthre{
+    font-size: 3.1em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Whyte Inktrap Bold';
+}
+.hthre .word,
+.hthre .wordl {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+}
+.hthre:hover .word{
+    opacity: 0.5;
+}
+
+.hthre:hover .wordl {
+    opacity: 1;
+}
+@font-face {
+    font-family: 'Whyte Inktrap Bold';
+    src: url('https://store.figma.com/cdn/shop/t/25/assets/WhyteInktrap-Bold.static.otf?v=14948104138520166731721752368') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Whyte Bold';
+    src: url('https://store.figma.com/cdn/shop/t/25/assets/Whyte-Bold.static.otf?v=128905595683774484771721752365') format('opentype');
+    font-weight: bold;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Whyte patla';
+    src: url('https://store.figma.com/cdn/shop/t/25/assets/Whyte-Regular.static.otf?v=31945448194616844191721752368') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+.secb{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 600px;
+    background-color: #000;
+}
+.texbox{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 8%;
+    background-color: #d3d3d3;
+    /* text-align: start; */
+    border: none;
+    padding-left: 10px;
+}
+.tex{
+    flex-grow: 1;
+    text-align: start;
+    font-size: 1.7em;
+    font-weight: 700;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+.preorder{
+    width: 120px;
+    background-color: #000;
+    border-radius: 30px;
+    padding: 9px;
+    text-align: center;
+}
+.simg{
+    flex-grow: 1.9;
+    border-top-right-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: grey;
+    background-image: url(images/product.webp);
+    background-position: center;
+    border: none;
+}
+/************************************************************* CATEGORY SELECTO RPAGE ********************************************** */
+.catogary{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 23px 40px;
+}
+.productcato{
+    background-color: #000000;
+    border-radius: 30px;
+    background-color: transparent;
+}
+.imgo img{
+    height: 480px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+}
+.imgo img:hover{
+    border: 2px solid #000000;
+}
+.info{
+       display: flex;
+       text-align: left;
+       font-family: 'Whyte Bold';
+}
+.foot{
+    height: 418px;
+    padding-top: 60px;
+    background-color: rgb(199, 185, 255);
+}
+
+/* *********************************************************** footer ************************************************* */
+.footer-grid{
+    padding-top: 60px;
+    background-color: #ffc700;
+}
+.gd{
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0px 150px;
+    /* width: 100%; */
+}
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item2{
+    font-family: 'Whyte Bold';
+    font-size: 1.4em;
+
+}
+.item3 a{
+    text-decoration-color: transparent;
+   color: #000;
+   font-family: 'whyte patla';
+   font-size: 0.8em;
+   transition: text-decoration-color .3s ease-in-out;
+}
+.lil{
+    margin-top: 13px;
+}
+.item4 ul{
+    display: flex;
+    gap: 40px;
+}
+.item4 a{
+    text-decoration-color: transparent;
+    color: #000;
+    font-family: 'whyte patla';
+    font-size: 1.5em;
+    transition: text-decoration-color .3s ease-in-out;
+
+}
+.item3 a:hover,
+.item4 a:hover{
+    text-decoration: underline;
+}
+.footer-marque{
+    display: flex;
+    overflow-x: hidden;
+    margin-top: 60px;
+}
+.footi{
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+.footi span{
+  margin: auto 10px;
+  font-family: 'Whyte Bold';
+  font-size: 1.625em;
+}
+.footi svg{
+    align-self: center;
+}
+.btn{
+    position: absolute;
+    top: 220px;
+    right: 206px;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ******************************************************* CATEGORY PAGE **************************************************** */
+
+.containero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 91px;
+}
+.containero h1{
+    font-family: 'Whyte Inktrap Bold';
+    text-align: center;
+    padding-bottom: 10px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    /* align-items: center; */
+    justify-items: center;
+}
+.product-card{
+    width: 230px;
+}
+.product-card img{
+    border-radius: 30px;
+    width: 230px;
+}
+.infu{
+    font-family: 'whyte bold';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ******************************************************** PRODUCT DETAIL PAGE ****************************************************** */
+
+.containeri{
+       margin-top: 98px;
+       margin-bottom: 120px;
+}
+.product-details{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(7, auto) 1fr;
+    column-gap: 50px;
+    margin: 0px 111px;
+}
+.product-details h1{
+    font-family: 'Whyte Inktrap Bold';
+    font-size: 3em;
+}
+.thumbnail-images{
+    height: 90px;
+    width: 90px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.thumbnail-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.bpic{
+    height: 906px;
+    width: 604px;
+}
+.bpic img{
+    border-radius: 120px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pico{
+    display: grid;
+    grid-row: span 8;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.size-radio {
+    font-family: 'whyte patla';
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+}
+
+.size-radio.active-size {
+    background-color: #000;
+    color: #fff;
+}
+
+.size-radio input[type="radio"] {
+    display: none;
+}
+
+.size-radio label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.s1{
+    display: flex;
+    gap: 20px;
+}
+.s1 p{
+    font-family: 'whyte bold';
+    font-size: 1.3em;
+    background-color: green;
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+.s2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.quantity-control{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: 'whyte patla';
+}
+.quantity-control button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.s2 p{
+    font-family: 'whyte bold';
+    font-size: 1.3em;
+}
+.cart-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 30px;
+    margin-top: 15px;
+    padding: 12px 40px 10px;
+}
+.cart-button:hover{
+    background-color: black;
+    color: white;
+}
+.discrip{
+    margin-top: 35px;
+    font-family: 'whyte patla';
+    font-size: 20px;
+}
+
+/* **************************************************************** FORM PAGE ***************************************************************** */
+.formoon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 92px;
+    font-family: 'whyte bold';
+}
+.formoon h2{
+    font-size: 2.3em;
+}
+.formo{
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid #ffc700;
+    width: 600px;
+    height: 500px;
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/backg.webp);
+}
+.texon{
+    margin-top: 20px;
+    font-family: 'whyte patla';
+    border-radius: 20px;
+    border: 2px solid blue;
+    width: 370px;
+    height: 100%;
+    font-size: 1.3em;
+    overflow: hidden;
+    
+}
+.submit{
+    margin-bottom: 20px;
+    width: 120px;
+    height: 100%;
+    background-color: transparent;
+}
+
